@@ -1,3 +1,4 @@
+yarn start
 ## Project info
 
 **Use your preferred IDE**
