@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram,Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -24,13 +24,11 @@ const Footer = () => {
       name: "Email",
       url: "mailto:kthilip0604@example.com"
     }
-
   ];
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
   return (
     <footer className="bg-gradient-background border-t border-border/20 py-12">
       <div className="container mx-auto px-6">
@@ -63,7 +61,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-
+          
           {/* Copyright */}
           <div className="text-center sm:text-left md:text-right">
             <p className="text-foreground/60 text-sm flex items-center justify-center sm:justify-start md:justify-end">
@@ -74,16 +72,6 @@ const Footer = () => {
             </p>
           </div>
         </div>
-
-        {/* Scroll to top button */}
-        {/* <div className="mt-8 pt-8 border-t border-border/20 text-center">
-          <button
-            onClick={scrollToTop}
-            className="text-foreground/60 hover:text-primary transition-colors duration-300 text-sm font-medium"
-          >
-            Back to Top ↑
-          </button>
-        </div> */}
       </div>
     </footer>
   );
